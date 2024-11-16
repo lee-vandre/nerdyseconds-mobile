@@ -1,0 +1,187 @@
+[gd_scene load_steps=11 format=3 uid="uid://bvylhckdks2vw"]
+
+[ext_resource type="Script" path="res://maincontrol.gd" id="1_ni3bv"]
+[ext_resource type="Texture2D" uid="uid://bjy053lyi1cky" path="res://Sky_Day_BlueSky_Equirect.png" id="2_6dd2q"]
+[ext_resource type="Script" path="res://node_3d.gd" id="2_r34cb"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_51wj6"]
+line_spacing = 6.0
+font_color = Color(0, 0, 0, 1)
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 2
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_j6wbg"]
+panorama = ExtResource("2_6dd2q")
+
+[sub_resource type="Sky" id="Sky_3mhaa"]
+sky_material = SubResource("PanoramaSkyMaterial_j6wbg")
+
+[sub_resource type="Environment" id="Environment_tvakg"]
+background_mode = 2
+sky = SubResource("Sky_3mhaa")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o4b1u"]
+
+[sub_resource type="TextMesh" id="TextMesh_030km"]
+material = SubResource("StandardMaterial3D_o4b1u")
+
+[sub_resource type="Skin" id="Skin_aiitj"]
+
+[node name="mainControl" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ni3bv")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 285.0
+offset_top = 33.0
+offset_right = 786.0
+offset_bottom = 182.0
+scale = Vector2(1.2, 1.2)
+color = Color(0.767641, 0.783098, 1.15514e-06, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 287.0
+offset_top = 234.0
+offset_right = 787.0
+offset_bottom = 383.0
+scale = Vector2(1.2, 1.2)
+color = Color(0, 0.850191, 0.860426, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 394.0
+offset_top = 70.0
+offset_right = 652.0
+offset_bottom = 93.0
+scale = Vector2(1.2, 1.2)
+text = "sdfsdfsdf"
+label_settings = SubResource("LabelSettings_51wj6")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 392.0
+offset_top = 96.0
+offset_right = 650.0
+offset_bottom = 119.0
+scale = Vector2(1.2, 1.2)
+text = "sdfsdfsdf"
+label_settings = SubResource("LabelSettings_51wj6")
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 394.0
+offset_top = 122.0
+offset_right = 652.0
+offset_bottom = 145.0
+scale = Vector2(1.2, 1.2)
+text = "sdfsdfsdf"
+label_settings = SubResource("LabelSettings_51wj6")
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="."]
+layout_mode = 0
+offset_left = 392.0
+offset_top = 149.0
+offset_right = 650.0
+offset_bottom = 172.0
+scale = Vector2(1.2, 1.2)
+text = "sdfsdfsdf"
+label_settings = SubResource("LabelSettings_51wj6")
+horizontal_alignment = 1
+
+[node name="Label5" type="Label" parent="."]
+layout_mode = 0
+offset_left = 392.0
+offset_top = 44.0
+offset_right = 650.0
+offset_bottom = 67.0
+scale = Vector2(1.2, 1.2)
+text = "sdfsdfsdf"
+label_settings = SubResource("LabelSettings_51wj6")
+horizontal_alignment = 1
+
+[node name="Label6" type="Label" parent="."]
+layout_mode = 0
+offset_left = 392.0
+offset_top = 259.0
+offset_right = 650.0
+offset_bottom = 282.0
+scale = Vector2(1.2, 1.2)
+text = "sdfsdfsdf"
+label_settings = SubResource("LabelSettings_51wj6")
+horizontal_alignment = 1
+
+[node name="Label7" type="Label" parent="."]
+layout_mode = 0
+offset_left = 394.0
+offset_top = 285.0
+offset_right = 652.0
+offset_bottom = 308.0
+scale = Vector2(1.2, 1.2)
+text = "sdfsdfsdf"
+label_settings = SubResource("LabelSettings_51wj6")
+horizontal_alignment = 1
+
+[node name="Label8" type="Label" parent="."]
+layout_mode = 0
+offset_left = 394.0
+offset_top = 308.0
+offset_right = 652.0
+offset_bottom = 331.0
+scale = Vector2(1.2, 1.2)
+text = "sdfsdfsdf"
+label_settings = SubResource("LabelSettings_51wj6")
+horizontal_alignment = 1
+
+[node name="Label9" type="Label" parent="."]
+layout_mode = 0
+offset_left = 394.0
+offset_top = 334.0
+offset_right = 652.0
+offset_bottom = 357.0
+scale = Vector2(1.2, 1.2)
+text = "sdfsdfsdf"
+label_settings = SubResource("LabelSettings_51wj6")
+horizontal_alignment = 1
+
+[node name="Label10" type="Label" parent="."]
+layout_mode = 0
+offset_left = 392.0
+offset_top = 361.0
+offset_right = 650.0
+offset_bottom = 384.0
+scale = Vector2(1.2, 1.2)
+text = "sdfsdfsdf"
+label_settings = SubResource("LabelSettings_51wj6")
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 450.0
+offset_top = 431.0
+offset_right = 620.0
+offset_bottom = 547.0
+text = "draw card"
+
+[node name="Node3D" type="Node3D" parent="."]
+script = ExtResource("2_r34cb")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Node3D"]
+environment = SubResource("Environment_tvakg")
+
+[node name="Camera3D" type="Camera3D" parent="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D"]
+mesh = SubResource("TextMesh_030km")
+skin = SubResource("Skin_aiitj")
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
